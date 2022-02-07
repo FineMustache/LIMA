@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Operacionais</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        body{
+            font-family: Questrial;
+            background-color: rgb(230, 230, 230);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .title{
+            background-image: url("header.png");
+            background-size: contain;
+            background-repeat: repeat-x;
+            height: 25vh;
+            color: white;
+            font-size: 2.5rem;
+            margin: 0;
+            padding-top: 50px;
+        }
+
+        .w-100{
+            width: 100%;
+        }
+
+        .d-flex{
+            display: flex;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .m-1{
+            margin: 1rem;
+        }
+
+        .so{
+            text-decoration: none;
+            color: #5b94cc;
+            transition: transform 1s;
+        }
+
+        .so:hover{
+            color: #4d83b9;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+    </style>
+    <p class="title w-100 center">Sistemas Operacionais</p>
+    
+    <table class="w-100 center">
+        <tr class="w-100">
+            <td class="so m-1">
+                <h3><a class="so" href="../pag2/wind.html">Windows</a></h3>  
+                <img onclick="location.href = '../pag2/wind.html'" src="win.png" width="256" alt="">
+            </td>
+            <td class="so m-1">
+                <h3><a class="so" href="../pag3/lin.html">Linux</a></h3>
+                <img onclick="location.href = '../pag3/lin.html'" src="lin.png" width="256" alt="">
+            </td>
+            <td class="so m-1">
+                <h3><a class="so" href="../pag4/mac.html">Mac</a></h3>
+                <img onclick="location.href = '../pag4/mac.html'" src="mac.png" width="256" alt="">
+            </td>
+        </tr>
+    </table>
+
+    
+
+</body>
+</html>
+
+<h1></h1>
