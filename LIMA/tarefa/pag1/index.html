@@ -14,6 +14,7 @@
             background-color: rgb(230, 230, 230);
             height: 100vh;
             overflow: hidden;
+            margin: 0;
         }
         .title{
             background-image: url("header.png");
@@ -46,6 +47,7 @@
             text-decoration: none;
             color: #5b94cc;
             transition: transform 1s;
+            font-size: 1.5rem;
         }
 
         .so:hover{
@@ -54,14 +56,32 @@
             cursor: pointer;
         }
 
+        img {
+            -webkit-filter: drop-shadow(0 10px 10px rgb(136, 136, 136));
+            filter: drop-shadow(0 10px 10px rgb(136, 136, 136));
+        }
+
+        .foot{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #5b94cc;
+            margin: 0;
+            text-align: center;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+            color: white;
+            font-size: 1.25rem;
+        }
+
     </style>
     <p class="title w-100 center">Sistemas Operacionais</p>
     
     <table class="w-100 center">
         <tr class="w-100">
             <td class="so m-1">
-                <h3><a class="so" href="../pag2/wind.html">Windows</a></h3>  
-                <img onclick="location.href = '../pag2/wind.html'" src="win.png" width="256" alt="">
+                <h3><a class="so" href="../pag2/win.html">Windows</a></h3>  
+                <img onclick="location.href = '../pag2/win.html'" src="win.png" width="256" alt="">
             </td>
             <td class="so m-1">
                 <h3><a class="so" href="../pag3/lin.html">Linux</a></h3>
@@ -74,9 +94,9 @@
         </tr>
     </table>
 
-    
+    <p class="foot">
+        Guilherme Henrique dos Santos Mendes | Senai 2022
+    </p>
 
 </body>
 </html>
-
-<h1></h1>
