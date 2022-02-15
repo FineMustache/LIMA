@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(221, 221, 221);
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .card{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            width: 30%;
+            padding: 2rem;
+            border-radius: 60px;
+            box-shadow: 5px 5px rgb(192, 192, 192);
+            padding-bottom: 80px;
+        }
+
+        .title{
+            font-size: 2rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input{
+            width: 20ch;
+        }
+
+        p{
+            text-align: center;
+        }
+    </style>
+    <div class="container">
+        <div class="card">
+            <form action="">
+                <p class="title">Cadastro</p>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" required><br><br>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required><br><br>    
+                </div>
+                
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" required><br><br>    
+                </div>
+                
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input id="age" type="range" name="idade" min="0" max="130" required><br><br>
+                    <span id="age"></span>
+                </div>
+                
+                <div>
+                    <input type="submit">
+                    <input value="Limpar" type="reset">
+                </div>
+                
+            </form>
+        </div>
+        <p>Já possui uma conta? Faça <a href="./login.html">LOGIN</a></p> 
+    </div>
+    
+    
+
+</body>
+
+<script>
+    document.getElementById("age").onchange(mostraIdade)
+
+    function mostraIdade(){
+        
+    }
+</script>
+</html>
