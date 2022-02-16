@@ -1,0 +1,20 @@
+body{
+    background-color: #ffd0fe;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.table-cont{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 40px;
+}

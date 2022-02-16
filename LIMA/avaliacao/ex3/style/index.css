@@ -1,0 +1,62 @@
+body{
+    background-color: #ffa600;
+}
+
+h2{
+    text-align: center;
+}
+
+.table-cont{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+}
+
+table{
+    background-color: #fff;
+}
+
+input{
+    border-radius: 50px;
+    padding: 10px;
+}
+
+td{
+    padding: 20px;
+}
+
+.btn-cad{
+    background-color: #69c36d;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100px;
+}
+
+.btn-log{
+    background-color: #69c36d;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    width: 80px;
+}
+
+.vl{
+    border-left: 2px solid black;
+    height: 440px;
+}
+
+.td-cad{
+    width: 480px;
+}
+
+.td-log{
+    width: 480px;
+}
+
+.btn-voltar{
+    padding: 10px;
+}

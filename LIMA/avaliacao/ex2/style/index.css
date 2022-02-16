@@ -1,0 +1,56 @@
+body{
+    background-color: #00ffff;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+p{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.table-cont{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 40px;
+}
+
+.table-head{
+    background-image: url('../img/ceu.jpg');
+    background-size: 180%;
+    height: 80px;
+}
+
+table{
+    background-color: #fff;
+}
+
+td, th{
+    padding: .5rem;
+    
+}
+
+
+.max{
+    text-align: center;
+    color: rgb(180, 0, 0);
+}
+
+.min{
+    text-align: center;
+    color: rgb(0, 0, 180);
+}
+
+.btn-qc{
+    margin-right: 60px;
+}
+
+a{
+    text-decoration: none;
+}
