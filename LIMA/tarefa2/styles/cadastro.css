@@ -45,6 +45,7 @@ body{
 
 .form-container{
     margin-top: 3rem;
+    width: 80%;
 }
 
 .field{
@@ -54,7 +55,7 @@ body{
 }
 
 .field-label{
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: right;
     color: white;
@@ -63,12 +64,29 @@ body{
 }
 
 .field-input{
-    width: 50%;
+    width: 70%;
 }
+
 
 .field-input input{
     border-width: 2px;
     border-color: #e29aad;
     border-style: solid;
     border-radius: 10px;
+    width: 15vw;
+}
+
+.btn-cadastrar{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btn-cadastrar button{
+    font-size: 20px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #e29aad;
+    color: #fff;
 }
