@@ -177,21 +177,48 @@ input{
     font-size: 1.5rem;
 }
 
+.prod span{
+    cursor: pointer;
+}
+
 footer{
+    display: flex;
+    justify-content: space-around;
     margin-top: 5vh;
     background-color: rgb(46, 46, 46);
     height: 10vh;
-    color: white;
+    color: rgb(150, 150, 150);
     padding: 5vh 10vw;
 }
 
 .footerCol{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 25vw;
 }
 
 .footerTitle{
     font-size: 1.2rem;
     margin-bottom: .5rem;
-    text-align: center;
+    color: white;
+}
+
+.footerEl{
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.footerEl:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+.ic{
+    width: 20px;
+    filter: invert(73%) sepia(1%) saturate(0%) hue-rotate(341deg) brightness(82%) contrast(87%);
+    margin-right: 5px;
 }
