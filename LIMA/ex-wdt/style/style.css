@@ -18,7 +18,7 @@ body{
 
 .start-menu{
     height: 65vh;
-    width: 34vw;
+    width: 40vw;
     background-color: rgb(36, 56, 56);
     display: flex;
 }
@@ -103,46 +103,106 @@ body{
 .productivity-explore{
     width: 50%;
     height: 100%;
+    padding-right: 10px;
 }
 
 .productivity{
     width: 100%;
     height: 60%;
-    display: flex;
-    flex-direction: column;
 }
 
 .prod-title{
     margin-top: 20px;
     margin-left: 10px;
+    margin-bottom: 10px;
 }
 
-.prod-ln{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
+.prod-elements{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 
-.prod-el-span1{
+.prod-el-cont{
+    background-color: rgb(82, 110, 110);
+    padding: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 3; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 3 / 1 / 4 / 2; }
+.div8 { grid-area: 3 / 2 / 4 / 4; }
+
+.div8 .prod-el{
+    background-size: 25%;
+}
+
+.prod-el{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 83px;
-    height: 83px;
-    background-image: url("../img/aps.png");
-    background-size: 60%;
+    width: 100%;
+    height: 85px;
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: center;
 }
 
-.prod-el-span1 img{
+.div1 .prod-el{
+    background-image: url("../img/office.png");
+}
+
+.div2 .prod-el{
+    background-image: url("../img/excel.png");
+}
+
+.div3 .prod-el{
+    background-image: url("../img/wdywtdt.png");
+    background-size: 80%;
+}
+
+.div4 .prod-el{
+    background-image: url("../img/onenote.png");
+}
+
+.div5 .prod-el{
+    background-image: url("../img/powerpoint.png");
+}
+
+.div6 .prod-el{
+    background-image: url("../img/edge.png");
+}
+
+.div6{
+    background-color: rgb(6, 62, 107);
+}
+
+.div7 .prod-el{
+    background-image: url("../img/word.png");
+    background-size: 80%;
+}
+
+.div8 .prod-el{
+    background-image: url("../img/photos.png");
+}
+
+.div8{
+    background-color: rgb(8,124,212);
+}
+
+.prod-el img{
     width: 35px;
     margin-bottom: 10px;
 }
 
-.prod-el-span1 span{
+.prod-el span{
     height: 15px;
     width: 100%;
 }
@@ -150,5 +210,79 @@ body{
 .explore{
     width: 100%;
     height: 40%;
-    background-color: blueviolet;
+}
+
+.exp-elements{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+    
+.exp-div1 { grid-area: 1 / 1 / 2 / 3; }
+.exp-div2 { grid-area: 1 / 3 / 2 / 4; }
+.exp-div3 { grid-area: 2 / 1 / 3 / 2; }
+.exp-div4 { grid-area: 2 / 2 / 3 / 3; }
+.exp-div5 { grid-area: 2 / 3 / 3 / 4; }
+
+
+
+.exp-el-cont{
+    background-color: rgb(82, 110, 110);
+    padding: 10px;
+}
+
+.exp-title{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.exp-el{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 85px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exp-div1 .exp-el{
+    background-image: url("../img/msstore.png");
+}
+
+.exp-div2{
+    background-image: url("../img/primevideofull.jpg");
+    background-size: cover;
+}
+
+.exp-div3 .exp-el{
+    background-image: url("../img/mail.png");
+}
+
+.exp-div4 .exp-el{
+    background-image: url("../img/onedrive.png");
+}
+
+.exp-div5 .exp-el{
+    background-image: url("../img/skype.png");
+    background-size: 80%;
+}
+
+.exp-el img{
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+.exp-el span{
+    height: 15px;
+    width: 100%;
+}
+
+.exp-div1 .exp-el{
+    background-size: 25%;
 }
