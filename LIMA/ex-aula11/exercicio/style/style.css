@@ -1,0 +1,186 @@
+body{
+    background-color: #f0ecec;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    height: 12vh;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.lupa{
+    width: 20px;
+}
+
+.dolar,
+.euro,
+.temp,
+.nav-label{
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.dolar{
+    color: red;
+}
+
+.euro{
+    color: green;
+}
+
+.temp{
+    color: lightskyblue;
+}
+
+.search{
+    position: absolute;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 3px 5px;
+    background-color: #b0acac;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    border: none;
+    width: 250px;
+    background: none;
+    font-style: italic;
+    outline: none!important;
+}
+
+.page{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0  px;
+    grid-row-gap: 30px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.hl-txt h3{
+    margin-bottom: 30px;
+    font-size: 17pt;
+}
+
+.hl-txt p{
+    font-size: 10pt;
+}
+
+.themes{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    font-size: 1.2rem;
+    margin-right: 20%;
+}
+
+.themes-title{
+    border-bottom: 1px solid black;
+    padding: 8px 10px!important;
+    margin: 0!important;
+}
+
+.themes-i-first{
+    margin-top: 20px!important;
+}
+
+.themes-i{
+    margin:0 20px 20px 20px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px solid black;
+}
+
+img{
+    width: 300px;
+}
+
+/* @media (max-width: 768px) {
+    .nav-label,
+    .dolar,
+    .euro,
+    .temp{
+        display: none;
+    }
+
+    .logo{
+        left: 10%;
+    }
+
+    .search{
+        right: 10%;
+    }
+} */
+
+@media (max-width: 425px) {
+    .search,
+    .nav-label,
+    .dolar,
+    .euro,
+    .temp{
+        display: none;
+    }
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .themes{
+        display: none;
+    }
+
+    .page{
+        width: 80vw;
+        padding: 0 10vw;
+    }
+}
