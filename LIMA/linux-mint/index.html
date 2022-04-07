@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Linux Mint</title>
+</head>
+<body>
+    <div class="desktop">
+        <div class="start-menu">
+            <div class="left-bar">
+                <img src="img/firefox.jpg" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/terminal.png" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/shutdown.png" alt="">
+            </div>
+            <div class="right-panel">
+                <div class="search-bar">
+                    <input id="input" type="text">
+                    <img src="img/lupa.png" alt="">
+                </div>
+                <div class="apps">
+                    <div class="apps-l">
+                        <div id="allApp" class="app">
+                            <span>All Applications</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Videos</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Musics</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Documents</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Downloads</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Desktop</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Images</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Icons</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Beetle Juice</span>
+                        </div>
+                    </div>
+                    <div class="apps-r">
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Videos</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Musics</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Documents</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Downloads</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Desktop</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Images</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Icons</span>
+                        </div>
+                        <div class="app">
+                            <img src="img/folder.png" alt="">
+                            <span>Beetle Juice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="task-bar">
+            <div class="tb-left">
+                <img class="mintLogo" src="img/mintlogo.png" alt="">
+                <img src="img/folder.png" alt="">
+                <img src="img/firefox.jpg" alt="">
+                <img src="img/terminal.png" alt="">
+            </div>
+            <div class="tb-right">
+                <img src="img/internet.png" alt="">
+                <img src="img/bt.png" alt="">
+                <img src="img/shield.png" alt="">
+                <img src="img/volume.png" alt="">
+                <span id="horario"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    document.getElementById("input").addEventListener('keyup', (e) =>{
+        let text = document.getElementById("input").value
+        if(text != ""){
+            console.log("entrou")
+            console.log(text)
+
+            document.getElementById("allApp").style.display = "none"
+            var spans = document.getElementsByTagName("span")
+
+            for (let i = 0; i < spans.length; i++) {
+                let element = spans.item(i)
+                
+                if (element.parentElement.classList.contains("app")){
+                    if(element.innerHTML.startsWith(text)){
+                        console.log(element.innerHTML)
+                        element.parentElement.style.display = "flex"
+                        // element.parentElement.style.display = "flex";
+                    } else {
+                        
+                        element.parentElement.style.display = "none"
+                        // element.parentElement.style.display = "hidden";
+                    }
+                    
+                }
+            }
+        } else {
+            console.log("entrou")
+            console.log(text)
+            document.getElementById("allApp").style.display = "flex"
+            var spans = document.getElementsByTagName("span")
+            for (let i = 0; i < spans.length; i++) {
+                let element = spans.item(i)
+                
+                if (element.parentElement.classList.contains("app")){
+                        element.parentElement.style.display = "flex"
+                        // element.parentElement.style.display = "hidden";
+                    
+                }
+            }
+        }
+    })
+
+    document.getElementById("input").addEventListener('keydown', (e) =>{
+        let text = document.getElementById("input").value
+        if(text != ""){
+            console.log("entrou")
+            console.log(text)
+            document.getElementById("allApp").style.display = "none"
+            var spans = document.getElementsByTagName("span")
+
+            for (let i = 0; i < spans.length; i++) {
+                let element = spans.item(i)
+                
+                if (element.parentElement.classList.contains("app")){
+                    if(element.innerHTML.startsWith(text)){
+                        console.log(element.innerHTML)
+                        element.parentElement.style.display = "flex"
+                        // element.parentElement.style.display = "flex";
+                    } else {
+                        
+                        element.parentElement.style.display = "none"
+                        // element.parentElement.style.display = "hidden";
+                    }
+                    
+                }
+            }
+        } else {
+            console.log("entrou")
+            console.log(text)
+            document.getElementById("allApp").style.display = "flex"
+            var spans = document.getElementsByTagName("span")
+            for (let i = 0; i < spans.length; i++) {
+                let element = spans.item(i)
+                
+                if (element.parentElement.classList.contains("app")){
+                        element.parentElement.style.display = "flex"
+                        // element.parentElement.style.display = "hidden";
+                    
+                }
+            }
+        }
+    })
+
+    var timeDisplay = document.getElementById("horario");
+
+
+    function refreshTime() {
+    var dateString = new Date().toLocaleString("en-US", {timeZone: "America/Sao_Paulo"});
+    var formattedString = dateString.replace(", ", " - ");
+    var splitado = formattedString.split(" ")
+    var splitado2 = splitado[2].split(":")
+    timeDisplay.innerHTML = splitado2[0] + ":" + splitado2[1];
+    }
+
+    setInterval(refreshTime, 1000);
+</script>
+
+</html>
