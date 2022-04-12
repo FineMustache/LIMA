@@ -1,0 +1,235 @@
+html, body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #dadde2;
+}
+
+nav{
+    height: 5vh;
+    width: 100%;
+    background-color: #404853;
+    color: #9ea4a8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left > img{
+    height: 100%;
+    margin-right: 150px;
+}
+
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.right > img{
+    height: 60%;
+}
+
+.right > *{
+    margin-right: 50px;
+}
+
+.page {
+    padding: 5vh 2vw;
+    height: calc(100% - 15vh);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 3fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}
+    
+.performance {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c2cbd1;
+    border-radius: 5px;
+}
+
+.perf-title{
+    font-size: 14pt;
+    margin-bottom: 25px;
+}
+
+.form-period{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 13pt;
+}
+
+.form-period > input{
+    height: 30px;
+    margin-bottom: 5px;
+    border: 1px solid #c2cbd1;
+    border-radius: 5px;
+}
+
+.form-act-type{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-size: 13pt;
+    margin-top: 10px;
+}
+
+.form-act-type > input{
+    height: 30px;
+    margin-bottom: 5px;
+    border: 1px solid #c2cbd1;
+    border-radius: 5px;
+}
+
+.activities {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: white;
+    border: 1px solid #c2cbd1;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    color: white;
+}
+
+.activities > div{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.act-title{
+    font-size: 15pt;
+}
+
+.act-num{
+    font-size: 36pt;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.act-1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #5984f4;
+}
+
+.act-2{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #5984f4;
+}
+
+.act-3{
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #9db4f8;
+}
+
+.act-4{
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #5984f4;
+}
+
+.act-5{
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #5984f4;
+}
+
+.act-6{
+    grid-area: 3 / 2 / 4 / 3;
+    background-color: #5984f4;
+}
+
+.act-7{
+    grid-area: 4 / 1 / 5 / 2;
+    background-color: #5984f4;
+}
+
+.act-8{
+    grid-area: 4 / 2 / 5 / 3;
+    background-color: #5984f4;
+}
+
+.main {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: white;
+    border: 1px solid #c2cbd1;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 5fr;
+    grid-column-gap: 5px;
+    color: white;
+}
+
+.main > div{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-title{
+    font-size: 15pt;
+}
+
+.main-num{
+    font-size: 28pt;
+}
+
+.main-help{
+    width: 15px;
+    align-self: flex-end;
+}
+
+.main-1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #3aa2eb;
+}
+
+.main-2{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #52c0bf;
+}
+
+.main-3{
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #f49e3f;
+}
+
+.main-4{
+    grid-area: 1 / 4 / 2 / 5;
+    background-color: #ee6183;
+}
+
+.main-5{
+    grid-area: 1 / 5 / 2 / 6;
+    background-color: white;
+}
+
+.main-dl{
+    width: 15px;
+    align-self: flex-end;
+}
+
+.main-6{
+    grid-area: 2 / 1 / 3 / 6;
+    background-image: url(https://wiki.taticview.com/images/4/48/Gr%C3%A1fico_de_linha_cruzado_2%2Bpt-BR.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -55px -50px;
+}

@@ -8,8 +8,10 @@
     <title>Linux Mint</title>
 </head>
 <body>
+    <img id="tux" width="150px" src="https://www.pngplay.com/wp-content/uploads/12/Round-Circle-PNG-Photos.png" alt="">
+    <img id="float" width="250px" src="img/tux.png" alt="">
     <div class="desktop">
-        <div class="start-menu">
+        <div id="sm" class="start-menu">
             <div class="left-bar">
                 <img src="img/firefox.jpg" alt="">
                 <img src="img/folder.png" alt="">
@@ -215,6 +217,39 @@
     }
 
     setInterval(refreshTime, 1000);
+
+    let circle = document.getElementById('tux');
+    const onMouseMove = (e) =>{
+        circle.style.left = (e.pageX - 75) + 'px';
+        circle.style.top = (e.pageY - 75) + 'px';
+    }
+    document.addEventListener('mousemove', onMouseMove);
+
+    setInterval(floating, 2000);
+
+    function floating() {
+        document.getElementById("float").style.left = "calc(" + generateRandom() + "% - 125px"
+        document.getElementById("float").style.top = "calc(" + generateRandom() + "% - 125px"
+    }
+
+    function generateRandom(min = 49, max = 51) {
+
+        // find diff
+        let difference = max - min;
+
+        // generate random number 
+        let rand = Math.random();
+
+        // multiply with difference 
+        rand = Math.floor( rand * difference);
+
+        // add with min value 
+        rand = rand + min;
+
+        return rand;
+    }
+
+
 </script>
 
 </html>

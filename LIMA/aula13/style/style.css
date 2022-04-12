@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+}
+
+.container{
+    height: 800px;
+    width: 800px;
+    display: grid;
+    grid-template-rows: 33.333% 33.333% 33.333%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    padding-left: 25%;
+    padding-top: 4%;
+}
+
+.circulo{
+    background-image: url(https://i.pinimg.com/originals/f7/90/09/f79009bd958d51189163936372d925e7.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.x{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/75/75519.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.container > div{
+    border: 2px solid black;
+}
+
+.div1{
+    border-top: none!important;
+    border-left: none!important;
+}
+
+.div2{
+    border-top: none!important;
+}
+
+.div3{
+    border-top: none!important;
+    border-right: none!important;
+}
+
+.div4{
+    border-left: none!important;
+}
+
+
+.div6{
+    border-right: none!important;
+}
+
+.div7{
+    border-bottom: none!important;
+    border-left: none!important;
+}
+
+.div8{
+    border-bottom: none!important;
+}
+
+.div9{
+    border-bottom: none!important;
+    border-right: none!important;
+}
