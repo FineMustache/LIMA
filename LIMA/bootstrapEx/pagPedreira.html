@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wikiwi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Wikiwi</a>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Nome do Artigo" aria-label="Nome do Artigo"
+                            aria-describedby="button-addon2" />
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="page row" id="inicio">
+        <div class="col-3 l">asas</div>
+        <div class="col-6 main">
+            <h1>Pedreira (São Paulo)</h1>
+            <hr>
+            <div class="content">
+                <div class="content-1">
+                    <div class="side-content-r">
+                        <img src="https://www.mbi.com.br/mbi/files/media/image/simbolopedia/municipio-pedreira-brasao-simb-brsesp0703237107.jpg" width="250px" alt="">
+                    </div>
+                    <p>Pedreira é um município brasileiro do estado de São Paulo. Sua população estimada em 2018 era de 47 361 habitantes.</p>
+                    <h3>História</h3>
+                    <hr>
+                    <p>As terras que, atualmente, constituem o município de Pedreira, originariamente pertenciam a Amparo e eram propriedade rural, desde o início do século XIX, de João Pedro de Godoy Moreira – avô materno do prefeito de Amparo, capitão Damásio Pires Pimentel e pai do fundador, o coronel (patente não oficial, apenas consuetudinário), João Pedro de Godoy Moreira – o moço.</p>
+                    <p>Em 1887 o fundador adquire de Jose Pedro Arruda gleba de sua fazenda Santa Ana e a anexa à sua “Fazenda Grande". A partir do loteamento e arruamento de parte de suas terras, nasce, junto ao rio Jaguari, a Vila de Pedreira no ano de 1889.</p>                    
+                    <p>O pai do fundador já havia construído, em 1834, sua residência nessas terras e na qual nasceu, em 22 de dezembro de 1836, João Pedro. Esse imóvel, situado na Praça Epitacio Pessoa, foi tombado pelo Património Histórico e é nos dias de hoje sede da Prefeitura Municipal.</p>                    
+                    <p>O nome da cidade, erroneamente associado por muitos à grande quantidade de pedras, origina-se, na verdade, da abundante presença de "Pedros" na família Godoy Moreira, João Pedro, pai e filho e seus irmãos Bento Pedro, Antonio Pedro e José Pedro (o terreno aonde foi construída a Estação da Companhia Mogiana de Estradas de Ferro, em 1875, foi doado por esse último irmão).</p>                    
+                    <p>Há na cidade logradouros e instituições que, em sua homenagem, ostentam o nome do fundador, Coronel João Pedro de Godoy Moreira.</p>
+                    <div class="side-content-r">
+                        <img src="data:image/jpeg;base64,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" height="180px" alt="">
+                    </div>
+                    <h3>Administração</h3>
+                    <hr>
+                    <ul>
+                        <li>Prefeito: Hamilton Bernardes Junior (2017/2020)</li>
+                        <li>Vice-prefeito: Fábio Vinicius Polidoro</li>
+                        <li>Presidente da câmara: José Luis Nieri (2017/2018)</li>
+                    </ul>
+                    <p>O Democratas (DEM) foi um partido político brasileiro de centro-direita[7][8] que se fundiu com o Partido Social Liberal (PSL) para formar o União Brasil (UNIÃO), conforme decidido em convenção por ambos em 6 de outubro de 2021, e sendo aprovado em 8 de fevereiro de 2022 pelo TSE.</p>
+                    <div class="side-content-l">
+                        <img src="https://www.refugiosnointerior.com.br/sistema/_lib/file/img/lugar/2675/morro-do-cristo-2-pedreira.jpg" width="200px" alt="">
+                    </div>
+                    <h3>Economia</h3>
+                    <hr>
+                    <p>Desde 2004, Pedreira faz parte do Circuito das Águas Paulista. Sua economia baseia-se na fabricação de utilidades em porcelana. Na última década, o segmento de injeção e transformação de resinas plásticas, apresentou um notável crescimento. Hoje com o comércio diversificado, podemos encontrar além de porcelanas e louças, uma infinidade de artigos domésticos e de adorno, inúmeras peças artísticas e de decoração dos mais variados matérias, tais como: faiança, madeira, alumínio, vidro, plástico, cerâmica, gesso, resina, ferro, etc.</p>
+                </div>
+                <p><a href="#" style="text-decoration: none;">Voltar <i class="fa fa-arrow-up" aria-hidden="true"></i></a></i></p>
+            </div>
+        </div>
+        <div class="col-3 r">sassas</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

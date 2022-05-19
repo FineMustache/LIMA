@@ -5,6 +5,8 @@ html{
 body{
     background-color: white;
     height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -51,5 +53,36 @@ input:focus{
 }
 
 header{
-    height: 5vh;
+    height: 6vh;
+    position: sticky;
+    top: 0;
+    width: 100vw!important;
+}
+
+.l, .r{
+    background-color: #dde0d5;
+    height: 94vh;
+    position: sticky;
+    top: 6vh;
+    bottom: 0;
+}
+
+.main{
+    padding: 2rem;
+}
+
+.content{
+
+}
+
+.side-content-r{
+    float: right;
+    width: 30%;
+    text-align: center;
+}
+
+.side-content-l{
+    float: left;
+    width: 30%;
+    text-align: center;
 }
