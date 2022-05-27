@@ -71,10 +71,6 @@ header{
     padding: 2rem;
 }
 
-.content{
-
-}
-
 .side-content-r{
     float: right;
     width: 30%;
@@ -85,4 +81,24 @@ header{
     float: left;
     width: 30%;
     text-align: center;
+}
+
+.content a{
+    color: #7ea629!important;
+}
+
+.content a:hover{
+    color: #729525!important
+}
+
+nav a{
+    color: white!important;
+}
+
+.allArt{
+    margin-right: 1rem;
+}
+
+.artFind{
+    background-color: #acdc46;
 }

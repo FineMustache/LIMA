@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Articles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Wikiwi</a>
+                <form class="d-flex" onsubmit="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputSearch" placeholder="Nome do Artigo" aria-label="Nome do Artigo"
+                            aria-describedby="button-addon2"/>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="search()">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="page row" id="inicio">
+        <div class="col-3 l"></div>
+        <div class="col-6 main">
+            <h1>Artigos</h1>
+            <hr>
+            <div class="content">
+                <div class="content-1">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3 r"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var articles = 
+        [
+            {
+                "nome": "Pedreira (São Paulo)",
+                "desc": "É um município brasileiro do estado de São Paulo. Sua população estimada em 2018 era de 47 361 habitantes.",
+                "link": "./pagPedreira.html",
+                "id": "pedreira"
+            },
+            {
+                "nome": "Amparo (São Paulo)",
+                "desc": "é um município brasileiro do estado de São Paulo. Sua população estimada é de cerca de 60 404 habitantes.",
+                "link": "./pagAmparo.html",
+                "id": "amparo"
+            }
+        ]
+        
+        document.body.onload = addArt
+
+        function addArt() {
+            articles.forEach(art => {
+            
+            var divArt = document.createElement("div")
+            var aArt = document.createElement("a")
+            var h3Art = document.createElement("h3")
+            var pArt = document.createElement("p")
+
+            var titleArt = document.createTextNode(art.nome)
+            var descArt = document.createTextNode(art.desc)
+
+            var hr = document.createElement("hr")
+
+            h3Art.appendChild(titleArt)
+            aArt.append(h3Art)
+            pArt.appendChild(descArt)
+
+            aArt.href = art.link
+
+            divArt.appendChild(aArt)
+            divArt.appendChild(pArt)
+            h3Art.classList.add("article-name")
+            divArt.id = art.id
+            divArt.style.padding = "1rem"
+
+            document.getElementsByClassName("content-1").item(0).appendChild(divArt)
+            document.getElementsByClassName("content-1").item(0).appendChild(hr)
+            });
+        }
+
+        function search() {
+            var pages = document.getElementsByClassName("article-name")
+
+            console.log(pages)
+
+            let text = document.getElementById("inputSearch").value
+
+            for (let i = 0; i < pages.length; i++) {
+                const page = pages[i];
+                console.log(page.innerHTML)
+                if (page.innerHTML.indexOf(text) !== -1) {
+                    articles.forEach(art => {
+                        if (art.nome == page.textContent) {
+                            document.getElementById(art.id).classList.add("artFind")
+                        }
+                    });
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
