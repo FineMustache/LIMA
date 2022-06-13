@@ -1,0 +1,12 @@
+[
+    {
+        "nome": "Pedreira (São Paulo)",
+        "href": "./pagPedreira.html",
+        "desc": "Pedreira é um município brasileiro do estado de São Paulo. Sua população estimada em 2018 era de 47 361 habitantes."
+    },
+    {
+        "nome": "Amparo (São Paulo)",
+        "href": "./pagAmparo.html",
+        "desc": "Amparo é um município brasileiro do estado de São Paulo, estando a uma altitude de 674 metros."
+    }
+]

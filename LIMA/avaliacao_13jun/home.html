@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Av. Lima 13/06</title>
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="menu">
+            <span>A Logo</span>
+            <span>Nossas Vantagens</span>
+            <span>Contato</span>
+        </div>
+        <nav>
+            <img src="./Assets/Logo.png" alt="" class="nav-logo">
+            <div class="nav-links">
+                <span class="nav-op">A Logo</span>
+                <span class="nav-op">Nossas Vantagens</span>
+                <span class="nav-op">Contato</span>
+            </div>
+            <div class="burger-menu" onclick="menu()">
+                <img src="Assets/menu.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <div class="page">
+        <div class="a-logo">
+            <span class="a-logo-title">Lorem ipsum dolor sit amet</span>
+            <p class="a-logo-content">consectetur adipiscing elit. Fusce eu urna tempus, ornare risus id, fermentum tortor. aecenas tempus turpis a nunc posuere, sit amet volutpat leo suscipit.</p>
+            <button class="btn">Download</button>
+        </div>
+        <img src="Assets/undraw_online_test_re_kyfx.svg" alt="" class="monitor">
+    </div>
+    <div class="page">
+        <img class="woman" src="Assets/undraw_visualization_re_1kag.svg" alt="">
+        <div class="nv-content">
+            <div class="nv-top">
+                <img class="ic" src="Assets/box-delivery-gift-svgrepo-com.svg" alt="">
+                <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="nv-desc">Tempus turpis a nunc posuere, sit amet volutpat leo suscipit. In in quam sed magna sodales.</div>
+            <div class="nv-cards">
+                <div class="nv-card">
+                    <img src="Assets/box-delivery-package-13-svgrepo-com.svg" alt="" class="ic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna tempus, ornare risus id.</p>
+                </div>
+                <div class="nv-card">
+                    <img src="Assets/box-delivery-package-13-svgrepo-com.svg" alt="" class="ic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna tempus, ornare risus id.</p>
+                </div>
+                <div class="nv-card">
+                    <img src="Assets/box-delivery-package-13-svgrepo-com.svg" alt="" class="ic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna tempus, ornare risus id.</p>
+                </div>
+                <div class="nv-card">
+                    <img src="Assets/box-delivery-package-13-svgrepo-com.svg" alt="" class="ic">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu urna tempus, ornare risus id.</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        function menu() {
+            var elMenu = document.getElementsByClassName("menu").item(0)
+            var overlay = document.getElementsByClassName("overlay").item(0)
+
+            console.log(elMenu.style.top)
+
+            if (elMenu.style.top == "0") {
+                elMenu.style.top = "-356px"
+                overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"
+            } else {
+                elMenu.style.top = "0"
+            }
+        }
+    </script>
+</body>
+</html>

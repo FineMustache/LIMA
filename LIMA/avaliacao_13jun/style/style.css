@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav{
+    height: 8vh;
+    background-color: #46B2EE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.menu{
+    position: absolute;
+    width: 290px;
+    height: 364px;
+    left: 0px;
+    top: -365px;
+
+    padding: 0 0 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(0deg, rgba(70, 178, 238, 0.25), rgba(70, 178, 238, 0.25)), #FFFFFF;
+    border-radius: 0px 0px 50px 0px;
+    transition: .5s ease-out;
+    z-index: 3;
+}
+
+.menu > span{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.nav-logo{
+    height: 90%;
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.nav-op{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+
+.page{
+    height: calc(100% - 8vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.a-logo{
+    width: 30%;
+    font-family: 'Montserrat';
+    word-wrap: break-word;
+    margin-left: 15%;
+}
+
+.a-logo-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.a-logo-content{
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.monitor{
+    width: 30%;
+    margin-right: 15%;
+}
+
+.btn{
+    width: 40%;
+    font-size: 1.5rem;
+    padding: .8rem 1rem;
+    color: white;
+    background: linear-gradient(98.33deg, #46B2EE 0%, #00679E 116.9%);
+    border-radius: 25px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.woman{
+    width: 30%;
+    margin-left: 15%;
+}
+
+.nv-content{
+    width: 30%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nv-top{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    font-size: 2rem
+}
+
+.nv-desc{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.nv-card{
+    background: rgba(255, 165, 48, 0.5);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nv-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nv-card > img{
+    position: relative;
+    top: -20px;
+    left: -20px;
+}
+
+.nv-card > p{
+    text-align: center;
+}
+
+
+.ic{
+    width: 4rem;
+}
+
+@media (max-width: 425px) {
+    .nav-links{
+        display: none;
+    }
+
+    nav{
+        flex-direction: row-reverse;
+        margin-bottom: 5rem;
+    }
+
+    .burger-menu{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .burger-menu > img{
+        height: 60%;
+        cursor: pointer;
+    }
+
+    .page{
+        flex-direction: column-reverse;
+        justify-content: start;
+        padding: 0 5%;
+        height: auto;
+        align-items: center;
+    }
+
+    .monitor{
+        margin: 0;
+        width: 100%;
+    }
+
+    .a-logo{
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0 0 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn{
+        width: 70%;
+    }
+}
