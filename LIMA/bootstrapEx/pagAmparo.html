@@ -1,43 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wikiwi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/style.css">
-  </head>
-  <body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amparo - Wikiwi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
     <header>
         <nav class="navbar navbar-dark bg-primary">
             <div class="container-fluid">
-              <a class="navbar-brand">Wikiwi</a>
-              <form class="d-flex" role="search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Nome do Artigo" aria-label="Nome do Artigo" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>  
-              </form>
+                <a class="navbar-brand" href="./index.html">Wikiwi</a>
+                <a class="allArt" href="./articles.html">Todos os Artigos</a>
             </div>
-          </nav>
+        </nav>
     </header>
-    <div class="container container-fluid">
-        <img src="img/wikiwi.png" alt="">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Nome do Artigo" aria-label="Nome do Artigo" aria-describedby="button-addon2" id="inputSearch" onsubmit="search()">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+    <div class="page row" id="inicio">
+        <div class="col-3 l"></div>
+        <div class="col-6 main">
+            <h1>Amparo (São Paulo)</h1>
+            <hr>
+            <div class="content">
+                <div class="content-1">
+                    <div class="side-content-r">
+                        <img src="https://www.mbi.com.br/mbi/files/media/image/simbolopedia/municipio-amparo-brasao-simb-brsesp0703301905.jpg" width="250px" alt="">
+                    </div>
+                    <p>Amparo é um município brasileiro do estado de São Paulo. Localiza-se a uma latitude 22º42'04" sul e a uma longitude 46º45'52" oeste, estando a uma altitude de 674 metros.</p>
+                    <h3>História</h3>
+                    <hr>
+                    <p>No início do século XIX, famílias de Atibaia, Bragança e Nazaré fixaram-se num bairro chamado Camandocaia, na região do Sertão de Bragança, possivelmente atraídos pela fertilidade das terras da região.</p>
+                    <p>Por volta de 1824, os moradores do retiro, com autorização do vigário capitular, constroem uma capela dedicada a Nossa Senhora do Amparo, que acabaria por dar nome à cidade.</p>                    
+                    <p>Em 8 de abril de 1829, o bairro da capela de Nossa Senhora do Amparo ganha a condição de capela curada, data que é oficialmente considerada a fundação de Amparo. Com o crescimento dos anos seguintes, o aglomerado é elevado a condição de freguesia (1839).</p>                    
+                    <p>1850 marca o início das lavouras de café, ciclo que impulsionaria a elevação da vila Nossa Senhora do Amparo à categoria de cidade em 1863.</p>                    
+                    <p>No período de 1870 a 1875, Antônio Pedro e José Pedro de Godoy Moreira (irmãos de João Pedro de Godoy Moreira - fundador de Pedreira/SP - e tios maternos do Intendente Damásio Pires Pimentel), foram os primeiros eleitores de Amparo já que no "antigo regime" havia o sistema de eleições indiretas e uns tantos contribuintes ou votantes davam direito à nomeação de um eleitor, que os representava no colégio eleitoral, nas eleições provinciais e gerais.</p>
+                    <div class="side-content-r">
+                        <img width="80%" height="80%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Hospital_da_Beneficencia_Portuguesa_Amparo.JPG/250px-Hospital_da_Beneficencia_Portuguesa_Amparo.JPG" height="180px" alt="">
+                    </div>
+                    <h3>Turismo</h3>
+                    <hr>
+                    <p>Amparo é uma das seis Estâncias Hidrominerais do Circuito das Águas Paulista, terceiro principal destino turístico do Estado de São Paulo. Seu principal atrativo turístico provém de sua geologia (Estância Hidromineral), principalmente de suas águas, sejam elas de suas fontes de águas minerais, seja do principal manancial que corta o município, o rio Camanducaia. Amparo dispõe também de um importante Patrimônio Histórico, protegido pelo CONDEPHAAT (órgão responsável pela preservação no Estado de São Paulo) e por seu Plano Diretor, objeto de teses e livros e considerado um dos mais diversificados e bem preservados da segunda metade do século XIX (época da lavoura cafeeira). Além disso, o Carnaval de Amparo é referência na região, bem como seu Festival de Inverno.</p>
+                    <div class="side-content-l">
+                        <img src="https://www.refugiosnointerior.com.br/sistema/_lib/file/img/lugar/2675/morro-do-cristo-2-pedreira.jpg" width="200px" alt="">
+                    </div>
+                    <h3>Comunicações</h3>
+                    <hr>
+                    <p>A cidade foi atendida pela Companhia Telefônica Brasileira (CTB) até 1973, quando passou a ser atendida pela Telecomunicações de São Paulo (TELESP), que construiu a central telefônica utilizada até os dias atuais. Em 1998 esta empresa foi privatizada e vendida para a Telefônica, sendo que em 2012 a empresa adotou a marca Vivo para suas operações de telefonia fixa.</p>
+                </div>
+                <p><a href="#" style="text-decoration: none;">Voltar <i class="fa fa-arrow-up" aria-hidden="true"></i></a></i></p>
+            </div>
         </div>
-        <span id="notFound" class="text-danger">Artigo não encontrado</span>
+        <div class="col-3 r"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
-      var articles = {
+      <script>
+        var articles = {
         PEDREIRA: "./pagPedreira.html",
         AMPARO: "./pagAmparo.html"
       }
+
+      document.body.onload = function load(){
 
       function search() {
         var text = document.getElementById("inputSearch").value
@@ -60,6 +92,8 @@
           document.getElementById("notFound").style.display = "block"
         }
       }
+    }
     </script>
-  </body>
+</body>
+
 </html>
